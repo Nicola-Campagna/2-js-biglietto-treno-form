@@ -16,55 +16,71 @@
 </head>
 
 <body>
-    <form action="">
-        <!-- nome e cognome passeggero -->
-        <div>
-            NOME E COGNOME :
-            <input type="text" name="user" id="user">
-        </div>
-        <!-- km da percorrere -->
-        <div>
-            KM :
-            <input type="number" id="km" name="km">
-        </div>
-        <!-- età passeggero -->
-        <div>
-            ETA' :
-            <input type="number" id="age" name="age">
-        </div>
-        <hr>
+    <form action="" class="container text-white border border-5 border-danger bg-danger">
+        <div class="row">
+            <div class="col-4 text-center">
+                <!-- nome e cognome passeggero -->
+                NOME E COGNOME : <br>
+                <input type="text" name="user" id="user">
+            </div>
+            <div class="col-4 text-center">
+                <!-- km da percorrere -->
+                KM : <br>
+                <input type="number" id="km" name="km">
+            </div>
+            <div class="col-4 text-center">
+                <!-- età passeggero -->
+                ETA' : <br>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="w-100 py-3"></div>
+            <div class="col-12 text-center">
+                <button type="button" id="btn">INVIA</button>
+            </div>
 
-        <button type="button" id="btn">INVIA</button>
-
+        </div>
     </form>
+
     <hr>
 
-
-    <div class="container">
+    <div class="container border border-5 border-danger">
         <div class="row">
-            <div class="col-12 bg-dark text-white">
-                <div class="row">
-
-                    <div class="col-6">
-                        NOME PASSEGGERO:
-                        <span id="userValue"></span>
+            <div class="col-12 text-white text-center">
+                <div class="row bg-danger bg-gradient">
+                    <div class="col-3" id="userValue">
+                        <h3>
+                            NOME PASSEGGERO
+                            <!-- nome e cognome generato in js -->
+                        </h3>
                     </div>
-                    <div class="col-2">ETA'
-                        <span id="ageValue"></span>
+                    <div class="col-3" id="ageValue">
+                        <h3>
+                            ETA'
+                            <!-- età inserita con js -->
+                        </h3>
                     </div>
-                    <div class="col-2" id="kmValue">KM</div>
-                    <div class="col-2">ZIPCODE: <br> 70010
+                    <div class="col-3" id="kmValue">
+                        <h3>
+                            KM
+                            <!-- km inseriti con js -->
+                        </h3>
                     </div>
-                    <div class="col-12">
-                        <div>
-                            INFO BIGLIETTO
-                            <h1 id="ticket">
-                                <!-- prezzo biglietto gnerato in js -->
-                            </h1>
-                        </div>
-
+                    <div class="col-3">
+                        <h3>
+                            ZIPCODE
+                        </h3>
+                        70010
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row border border-3 bg-secondary "></div>
+        <div class="row bg-danger bg-gradient">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 id="ticket" class="text-center text-white">
+                    PREZZO FINALE BIGLIETTO <br>
+                    <!-- prezzo biglietto gnerato in js -->
+                </h3>
             </div>
         </div>
     </div>
