@@ -69,15 +69,15 @@ btn.addEventListener(
 
         // km 
         const userKmValueEl = document.getElementById("kmValue");
-        if (!isNaN(userKmEl.value) &&
-            userKmEl.value > 0) {
+
+        if (!isNaN(userKmEl.value) && userKmEl.value > 0) {
             userKmValueEl.innerHTML += userKmEl.value;
         }
 
         // età
         const userAgeValueEl = document.getElementById("ageValue");
-        if (!isNaN(userAgeEl.value) &&
-            userAgeEl.value > 0) {
+
+        if (!isNaN(userAgeEl.value) && userAgeEl.value > 0) {
             userAgeValueEl.innerHTML += userAgeEl.value;
         }
 
