@@ -18,9 +18,9 @@
 <body>
     <!-- COMPILA IL BIGLIETTO INSERENDO TUTTI GLI INPUT NECESSARI A GENERARE UN BIGLIETTO  -->
     <h1 class="text-center text-muted">COMPILA IL TUO BIGLIETTO</h1>
+
     <form action="" class="container text-white border border-5 border-danger bg-danger">
         <div class="row">
-
             <div class="col-4 text-center">
                 <!-- nome e cognome passeggero -->
                 NOME E COGNOME : <br>
@@ -40,7 +40,6 @@
             <div class="col-12 text-center">
                 <button type="button" id="btn">INVIA</button>
             </div>
-
         </div>
     </form>
 
@@ -53,29 +52,37 @@
             </div>
             <div class="col-12 text-white text-center">
                 <div class="row bg-danger bg-gradient">
-                    <div class="col-3" id="userValue">
-                        <h3>
-                            NOME PASSEGGERO
-                            <!-- nome e cognome generato in js -->
-                        </h3>
-                    </div>
-                    <div class="col-3" id="ageValue">
-                        <h3>
-                            ETA'
-                            <!-- età inserita con js -->
-                        </h3>
-                    </div>
-                    <div class="col-3" id="kmValue">
-                        <h3>
-                            KM
-                            <!-- km inseriti con js -->
-                        </h3>
+                    <div class="col-3">
+                        <h5>
+                            NOME PASSEGGERO <br>
+                            <span class="text-black-50" id="userValue">
+                                <!-- nome e cognome generato in js -->
+                            </span>
+                        </h5>
                     </div>
                     <div class="col-3">
-                        <h3>
-                            ZIPCODE
-                        </h3>
-                        70010
+                        <h5>
+                            ETA' <br>
+                            <span class="text-black-50" id="ageValue">
+                                <!-- età inserita con js -->
+                            </span>
+                        </h5>
+                    </div>
+                    <div class="col-3">
+                        <h5>
+                            KM <br>
+                            <span class="text-black-50" id="kmValue">
+                                <!-- km inseriti con js -->
+                            </span>
+                        </h5>
+                    </div>
+                    <div class="col-3">
+                        <h5>
+                            ZIPCODE <br>
+                            <span class="text-black-50">
+                                70010
+                            </span>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -83,9 +90,11 @@
         <div class="row border border-3 bg-secondary "></div>
         <div class="row bg-danger bg-gradient">
             <div class="col-12 d-flex justify-content-center">
-                <h3 id="ticket" class="text-center text-white">
+                <h3 class="text-center text-white">
                     PREZZO FINALE BIGLIETTO <br>
-                    <!-- prezzo biglietto gnerato in js -->
+                    <span id="ticket" class="text-black-50">
+                        <!-- prezzo biglietto gnerato in js -->
+                    </span>
                 </h3>
             </div>
         </div>
